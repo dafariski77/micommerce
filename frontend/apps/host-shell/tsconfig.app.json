@@ -21,8 +21,8 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@antigravity/shared-ui/react/*": ["../../packages/shared-ui/src/react/*"],
-      "@antigravity/shared-ui/vue/*": ["../../packages/shared-ui/src/vue/*"]
+      "@micommerce/shared-ui/react/*": ["../../packages/shared-ui/src/react/*"],
+      "@micommerce/shared-ui/vue/*": ["../../packages/shared-ui/src/vue/*"]
     }
   },
   "include": ["src", "../../packages/shared-ui/src/react/**/*"]

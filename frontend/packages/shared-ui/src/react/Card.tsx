@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   hoverable?: boolean;
@@ -7,13 +7,13 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 export const Card: React.FC<CardProps> = ({
   children,
   hoverable = false,
-  className = '',
+  className = "",
   ...props
 }) => {
   return (
     <div
       className={`bg-white rounded-lg shadow-md p-6 border border-gray-100 transition-all duration-200 ${
-        hoverable ? 'hover:shadow-lg hover:-translate-y-0.5' : ''
+        hoverable ? "hover:shadow-lg hover:-translate-y-0.5" : ""
       } ${className}`}
       {...props}
     >

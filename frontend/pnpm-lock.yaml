@@ -17,7 +17,7 @@ importers:
 
   apps/host-shell:
     dependencies:
-      '@antigravity/shared-ui':
+      '@micommerce/shared-ui':
         specifier: workspace:*
         version: link:../../packages/shared-ui
       '@tanstack/react-query':
@@ -99,7 +99,7 @@ importers:
 
   apps/remote-catalog:
     dependencies:
-      '@antigravity/shared-ui':
+      '@micommerce/shared-ui':
         specifier: workspace:*
         version: link:../../packages/shared-ui
       lucide-vue-next:
@@ -148,7 +148,7 @@ importers:
 
   apps/remote-dashboard:
     dependencies:
-      '@antigravity/shared-ui':
+      '@micommerce/shared-ui':
         specifier: workspace:*
         version: link:../../packages/shared-ui
       '@tanstack/react-query':

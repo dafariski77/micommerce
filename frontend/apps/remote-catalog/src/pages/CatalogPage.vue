@@ -110,9 +110,9 @@
 import { ref, onMounted, computed } from 'vue';
 import { Search, ShoppingBag, ShoppingCart, Plus, X } from 'lucide-vue-next';
 import { useCartStore } from '../store/cartStore';
-import Button from '@antigravity/shared-ui/vue/Button.vue';
-import Card from '@antigravity/shared-ui/vue/Card.vue';
-import Input from '@antigravity/shared-ui/vue/Input.vue';
+import Button from '@micommerce/shared-ui/vue/Button.vue';
+import Card from '@micommerce/shared-ui/vue/Card.vue';
+import Input from '@micommerce/shared-ui/vue/Input.vue';
 
 const API_URL = import.meta.env.VITE_API_URL !== undefined ? import.meta.env.VITE_API_URL : 'http://localhost:8080';
 

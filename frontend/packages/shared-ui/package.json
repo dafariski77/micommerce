@@ -1,5 +1,5 @@
 {
-  "name": "@antigravity/shared-ui",
+  "name": "@micommerce/shared-ui",
   "version": "1.0.0",
   "type": "module",
   "main": "index.css",

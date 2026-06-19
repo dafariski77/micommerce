@@ -5,7 +5,7 @@ import { useAuthStore } from './store/authStore';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
-const CatalogPage = lazy(() => import('remote_catalog/CatalogPage').then(m => ({ default: m.default })));
+
 const DashboardMain = lazy(() => import('remote_dashboard/DashboardMain').then(m => ({ default: m.default })));
 
 const rootRoute = createRootRoute({
@@ -84,9 +84,7 @@ const catalogRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/catalog',
   component: () => (
-    <Suspense fallback={<div className="flex justify-center p-8">Loading Catalog...</div>}>
-      <VueWrapper vueComponent={CatalogPage} />
-    </Suspense>
+    <VueWrapper loadComponent={() => import('remote_catalog/CatalogPage')} />
   ),
 });
 

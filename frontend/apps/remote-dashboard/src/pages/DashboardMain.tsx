@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Package, TrendingUp, FolderTree, Trash2 } from 'lucide-react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Button } from '@antigravity/shared-ui/react/Button';
-import { Card } from '@antigravity/shared-ui/react/Card';
-import { Input } from '@antigravity/shared-ui/react/Input';
+import { Button } from '@micommerce/shared-ui/react/Button';
+import { Card } from '@micommerce/shared-ui/react/Card';
+import { Input } from '@micommerce/shared-ui/react/Input';
 
 interface Category {
   id: number;
