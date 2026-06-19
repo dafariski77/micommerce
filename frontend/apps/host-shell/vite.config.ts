@@ -25,9 +25,12 @@ export default defineConfig(({ mode }) => {
           remote_catalog: remoteCatalogUrl,
           remote_dashboard: remoteDashboardUrl,
         },
-        shared: ['react', 'react-dom', '@tanstack/react-router']
+        shared: ['react', 'react-dom', '@tanstack/react-router', 'vue', 'pinia']
       })
     ],
+    resolve: {
+      dedupe: ['react', 'react-dom']
+    },
     server: { port: 5000 },
     preview: { port: 5000 },
     build: {

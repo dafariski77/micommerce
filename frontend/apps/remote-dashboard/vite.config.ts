@@ -17,6 +17,9 @@ export default defineConfig({
       shared: ['react', 'react-dom']
     })
   ],
+  resolve: {
+    dedupe: ['react', 'react-dom']
+  },
   server: { port: 5002 },
   preview: { port: 5002 },
   build: {

@@ -14,7 +14,7 @@ export default defineConfig({
       exposes: {
         './CatalogPage': './src/pages/CatalogPage.vue',
       },
-      shared: ['vue']
+      shared: ['vue', 'pinia']
     })
   ],
   server: { port: 5001 },
