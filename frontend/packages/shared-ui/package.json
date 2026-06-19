@@ -1,0 +1,56 @@
+{
+  "name": "@antigravity/shared-ui",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.css",
+  "exports": {
+    ".": "./index.css",
+    "./index.css": "./index.css",
+    "./react/Button": {
+      "types": "./src/react/Button.tsx",
+      "default": "./src/react/Button.tsx"
+    },
+    "./react/Card": {
+      "types": "./src/react/Card.tsx",
+      "default": "./src/react/Card.tsx"
+    },
+    "./react/Input": {
+      "types": "./src/react/Input.tsx",
+      "default": "./src/react/Input.tsx"
+    },
+    "./vue/Button": {
+      "default": "./src/vue/Button.vue"
+    },
+    "./vue/Card": {
+      "default": "./src/vue/Card.vue"
+    },
+    "./vue/Input": {
+      "default": "./src/vue/Input.vue"
+    },
+    "./vue/Button.vue": {
+      "default": "./src/vue/Button.vue"
+    },
+    "./vue/Card.vue": {
+      "default": "./src/vue/Card.vue"
+    },
+    "./vue/Input.vue": {
+      "default": "./src/vue/Input.vue"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0"
+  }
+}

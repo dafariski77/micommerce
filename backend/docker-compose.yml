@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: micommerce-backend
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-8080}:${PORT:-8080}"

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_APP_URL: ${VITE_APP_URL:-}
+        VITE_API_URL: ${VITE_API_URL:-}
+    container_name: micommerce-frontend
+    restart: always
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+      - "5002:5002"
